@@ -1,12 +1,12 @@
 // utils/config-negocio.js - VERSIÓN MULTI-TENANT CORREGIDA
-// CLIENTE: studio Lis Nails
+// CLIENTE: Yayi Nails Salón y spa
 
 console.log('🏢 config-negocio.js cargado');
 
 // ============================================
 // 🔥 CONFIGURACIÓN POR CLIENTE - ¡LO ÚNICO QUE CAMBIA!
 // ============================================
-const NEGOCIO_ID_POR_DEFECTO = '6ec8be7e-a6cf-4a18-b507-c35354a03bb2'; // ID de studio Lis Nails
+const NEGOCIO_ID_POR_DEFECTO = '46ce6c3e-3c02-4232-a96c-6d0c5a92b12e'; // ID de Yayi Nails Salón y spa
 
 // Hacer accesible globalmente
 window.NEGOCIO_ID_POR_DEFECTO = NEGOCIO_ID_POR_DEFECTO;
@@ -116,7 +116,7 @@ window.cargarConfiguracionNegocio = async function(forceRefresh = false) {
  */
 window.getNombreNegocio = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.nombre || 'studio Lis Nails';
+    return config?.nombre || 'Yayi Nails Salón y spa';
 };
 
 /**
@@ -124,7 +124,7 @@ window.getNombreNegocio = async function() {
  */
 window.getTelefonoDuenno = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.telefono || '51832308';
+    return config?.telefono || '59262793 ';
 };
 
 /**
@@ -132,7 +132,7 @@ window.getTelefonoDuenno = async function() {
  */
 window.getEmailNegocio = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.email || 'lis@gmail.com';
+    return config?.email || 'yaimilsis@gmail.com';
 };
 
 /**
@@ -164,7 +164,7 @@ window.getHorarioAtencion = async function() {
  */
 window.getMensajeBienvenida = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.mensaje_bienvenida || '¡Bienvenida a studio Lis Nails!';
+    return config?.mensaje_bienvenida || '¡Bienvenida a Yayi Nails Salón y spa!';
 };
 
 /**
@@ -180,7 +180,7 @@ window.getMensajeConfirmacion = async function() {
  */
 window.getNtfyTopic = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.ntfy_topic || 'studio-lis-nails';
+    return config?.ntfy_topic || 'yayi-nails-saln-y-spa';
 };
 
 /**
@@ -205,5 +205,5 @@ setTimeout(async () => {
     await window.cargarConfiguracionNegocio();
 }, 500);
 
-console.log('✅ config-negocio.js listo para studio Lis Nails');
+console.log('✅ config-negocio.js listo para Yayi Nails Salón y spa');
 console.log('🏷️  ID configurado:', NEGOCIO_ID_POR_DEFECTO);

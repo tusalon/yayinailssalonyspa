@@ -1,22 +1,22 @@
-// sw.js - Service Worker para studio Lis Nails
+// sw.js - Service Worker para Yayi Nails Salón y spa
 
-const CACHE_NAME = 'studio-lis-nails-v1';
+const CACHE_NAME = 'yayi-nails-saln-y-spa-v1';
 const urlsToCache = [
-  '/studio-lis-nails/',
-  '/studio-lis-nails/index.html',
-  '/studio-lis-nails/admin.html',
-  '/studio-lis-nails/admin-login.html',
-  '/studio-lis-nails/setup-wizard.html',
-  '/studio-lis-nails/editar-negocio.html',
-  '/studio-lis-nails/manifest.json',
-  '/studio-lis-nails/icons/icon-72x72.png',
-  '/studio-lis-nails/icons/icon-96x96.png',
-  '/studio-lis-nails/icons/icon-128x128.png',
-  '/studio-lis-nails/icons/icon-144x144.png',
-  '/studio-lis-nails/icons/icon-152x152.png',
-  '/studio-lis-nails/icons/icon-192x192.png',
-  '/studio-lis-nails/icons/icon-384x384.png',
-  '/studio-lis-nails/icons/icon-512x512.png'
+  '/yayi-nails-saln-y-spa/',
+  '/yayi-nails-saln-y-spa/index.html',
+  '/yayi-nails-saln-y-spa/admin.html',
+  '/yayi-nails-saln-y-spa/admin-login.html',
+  '/yayi-nails-saln-y-spa/setup-wizard.html',
+  '/yayi-nails-saln-y-spa/editar-negocio.html',
+  '/yayi-nails-saln-y-spa/manifest.json',
+  '/yayi-nails-saln-y-spa/icons/icon-72x72.png',
+  '/yayi-nails-saln-y-spa/icons/icon-96x96.png',
+  '/yayi-nails-saln-y-spa/icons/icon-128x128.png',
+  '/yayi-nails-saln-y-spa/icons/icon-144x144.png',
+  '/yayi-nails-saln-y-spa/icons/icon-152x152.png',
+  '/yayi-nails-saln-y-spa/icons/icon-192x192.png',
+  '/yayi-nails-saln-y-spa/icons/icon-384x384.png',
+  '/yayi-nails-saln-y-spa/icons/icon-512x512.png'
 ];
 
 // ============================================
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
           }
           // Si no hay cache y es imagen, devolver icon por defecto
           if (event.request.url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/)) {
-            return caches.match('/studio-lis-nails/icons/icon-192x192.png');
+            return caches.match('/yayi-nails-saln-y-spa/icons/icon-192x192.png');
           }
           return new Response('Error de red', { status: 408 });
         });
@@ -138,6 +138,6 @@ self.addEventListener('message', event => {
   }
 });
 
-console.log('✅ Service Worker configurado para studio Lis Nails');
+console.log('✅ Service Worker configurado para Yayi Nails Salón y spa');
 console.log('📦 Cache:', CACHE_NAME);
 console.log('📄 Archivos a cachear:', urlsToCache.length);

@@ -1,20 +1,20 @@
 {
-  "name": "studio Lis Nails",
-  "short_name": "studio",
+  "name": "Yayi Nails Salón y spa",
+  "short_name": "Yayi",
   "description": "Uñas y belleza - Tu espacio de cuidado personal",
-  "start_url": "/studio-lis-nails/",
-  "scope": "/studio-lis-nails/",
+  "start_url": "/yayi-nails-saln-y-spa/",
+  "scope": "/yayi-nails-saln-y-spa/",
   "display": "standalone",
   "background_color": "#ec4899",
   "theme_color": "#ec4899",
   "icons": [
     {
-      "src": "/studio-lis-nails/icons/icon-192x192.png",
+      "src": "/yayi-nails-saln-y-spa/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/studio-lis-nails/icons/icon-512x512.png",
+      "src": "/yayi-nails-saln-y-spa/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
